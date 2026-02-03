@@ -5,7 +5,7 @@ import streamlit as st
 # --- Configuração da Página ---
 # Define o título da página, o ícone e o layout para ocupar a largura inteira.
 st.set_page_config(
-    page_title="Dashboard Salarial - Área de Dados",
+    page_title="Dashboard Salarial - Área de dados",
     page_icon="📊",
     layout="wide",
 )
@@ -43,7 +43,7 @@ df_filtrado = df[
 ]
 
 # --- Conteúdo Principal ---
-st.title("Dashboard Salarial - Área de Dados")
+st.title("Dashboard Salarial - Área de dados")
 st.markdown("Explore os dados salariais na área de dados nos últimos anos. Utilize os filtros à esquerda para refinar sua análise.")
 
 # --- Métricas Principais (KPIs) ---
@@ -127,13 +127,13 @@ with col_graf4:
             locations='residencia_iso3',
             color='usd',
             color_continuous_scale='rdylgn',
-            title='Salário médio de Cientista de Dados por país',
+            title='Salário médio de Cientista de dados por país',
             labels={'usd': 'Salário médio (USD)', 'residencia_iso3': 'País'})
         grafico_paises.update_layout(title_x=0.1)
         st.plotly_chart(grafico_paises, use_container_width=True)
     else:
         st.warning("Nenhum dado para exibir no gráfico de países.")
 
-# --- Tabela de Dados Detalhados ---
-st.subheader("Dados Detalhados")
+# --- Tabela de dados Detalhados ---
+st.subheader("dados Detalhados")
 st.dataframe(df_filtrado)
