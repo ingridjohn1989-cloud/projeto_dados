@@ -91,7 +91,7 @@ GitHub (data source)
 ## ▶ Como Executar Localmente
 
  Clone o repositório
-git clone https://github.com/seu-usuario/seu-repo.git
+git clone 
 
  Instale as dependências
 pip install -r requirements.txt
